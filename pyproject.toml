@@ -14,10 +14,8 @@ readme = "README.md"
 requires-python = ">=3.6"
 
 [project.urls]
-homepage = "hhttps://github.com/EVA-JianJun/PyLibreHardwareMonitorLib"
-repository = "hhttps://github.com/EVA-JianJun/PyLibreHardwareMonitorLib"
-
-[project.dependencies]
+homepage = "https://github.com/EVA-JianJun/PyLibreHardwareMonitorLib"
+repository = "https://github.com/EVA-JianJun/PyLibreHardwareMonitorLib"
 
 [tool.setuptools]
 # 指定包的目录
@@ -26,15 +24,3 @@ packages = ["PyLibreHardwareMonitorLib"]
 [tool.setuptools.package-data]
 # 包含 DLL 文件
 PyLibreHardwareMonitorLib = ["dll/**/*"]
-
-[tool.setuptools.platforms]
-# 仅支持 Windows 64 位
-platform = ["win_amd64"]
-
-[tool.setuptools.python-requires]
-# 仅支持 Python 3
-python = ">=3.6"
-
-[tool.setuptools.scripts]
-# 如果有任何脚本需要安装，可以在这里添加
-# example = "PyLibreHardwareMonitorLib:main"
