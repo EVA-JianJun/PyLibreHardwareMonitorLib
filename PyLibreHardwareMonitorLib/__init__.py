@@ -25,6 +25,10 @@ def get_dll_paths():
         latest_version = sorted(dll_paths.keys())[-1]
         dll_paths['latest'] = dll_paths[latest_version]
 
+    # HidSharp.dll 目录
+    HidSharp_dll_dir = os.path.join(dll_dir, "HidSharp.dll")
+    dll_paths['HidSharp'] = HidSharp_dll_dir
+
     return dll_paths
 
 # 只导出 dll 变量
